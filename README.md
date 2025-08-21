@@ -52,21 +52,21 @@ This tutorial provides the steps to prepare Active Directory (AD) infrastructure
   </p>
 ---
 
-### Setup Client-1 in Azure
+### Setup client-1 in Azure
 1. **Create the Client VM (Windows 11)**
    - Set up a Windows 11 VM as the Client machine and name it "client-1" (ensure both VMs are in the same network and region).
 <p>
 <img width="520" height="620" alt="image" src="https://github.com/user-attachments/assets/1cffd623-b0c9-4034-af13-e7d0b19f330f" />
 </p>
 
-2. **Set Client-1’s DNS to DC-1’s Private IP**
-   - Configure "Client-1" to use "DC-1’s" private IP as its DNS server.
+2. **Set client-1’s DNS to dc-1’s Private IP**
+   - Configure "client-1" to use "dc-1’s" private IP as its DNS server.
 <p>
 <img width="1066" height="574" alt="image" src="https://github.com/user-attachments/assets/332b9f84-3d14-47bd-bebd-3b6fc8826b15" />
 <img width="1098" height="485" alt="image" src="https://github.com/user-attachments/assets/7254caf8-cb28-4418-9280-27f23a8596a8" />
 </p>
 
-3. **Restart Client-1 and log in**
+3. **Restart client-1 and log in**
    - Restart "client-1" to apply the DNS settings.
    - Log into "client-1" to check the connection.
 <p>
@@ -74,14 +74,14 @@ This tutorial provides the steps to prepare Active Directory (AD) infrastructure
 <img width="957" height="597" alt="image" src="https://github.com/user-attachments/assets/1b5d967e-b3f4-46b7-be8c-684422b4a704" />
 </p>
 
-4. **Ping DC-1’s private IP from Client-1 and verify the connection**
-   - Ping "DC-1" from "Client-1" to confirm the connection is successful and verify network communication.
+4. **Ping dc-1’s private IP from client-1 and verify the connection**
+   - Ping "dc-1" from "client-1" to confirm the connection is successful and verify network communication.
 <p>
 <img width="858" height="478" alt="image" src="https://github.com/user-attachments/assets/5bb4860d-7edb-4b2a-8116-51b564e0e032" />
 </p>
 
-6. **Check DNS Settings on Client-1**
-   - Run `ipconfig /all` on "Client-1" to verify it uses "DC-1’s" IP for DNS.
+6. **Check DNS Settings on client-1**
+   - Run `ipconfig /all` on "client-1" to verify it uses "dc-1’s" IP for DNS.
 <p>
 <img width="736" height="552" alt="image" src="https://github.com/user-attachments/assets/b4114cf5-b6cf-45fb-91bf-ecf17233f914" />
 </p>
